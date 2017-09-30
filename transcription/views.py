@@ -218,8 +218,8 @@ class Sorry(Page):
 
 page_sequence = [
     StartWP,
-    ManagerChat,
-    EmployeeChat,
+#    ManagerChat,
+#    EmployeeChat,
     Transcribe,
     Results,
     Sorry
