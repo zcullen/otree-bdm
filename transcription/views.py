@@ -217,7 +217,7 @@ class Sorry(Page):
             return True
 
 page_sequence = [
-    StartWP,
+#    StartWP,
 #    ManagerChat,
 #    EmployeeChat,
     Transcribe,

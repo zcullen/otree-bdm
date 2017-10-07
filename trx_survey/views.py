@@ -7,7 +7,12 @@ from django.conf import settings
 
 
 class Introduction(Page):   # extra manager intro
-    pass
+
+    def vars_for_template(self):
+        if self.session.mturk_HITId:
+            for p in self.session.get_participants():
+                wid = p.mturk_worker_id
+                return {'wid': wid}
 
 class Sample(Page):      # transcription sample for manager
     form_model = models.Player
@@ -26,8 +31,8 @@ class Bid(Page):
 
 page_sequence = [
 
-    Introduction,
-    Sample,
-    Preferences,
-    Bid
+    Introduction
+#    Sample,
+#    Preferences,
+#    Bid
 ]
