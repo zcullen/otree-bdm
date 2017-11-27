@@ -1,6 +1,7 @@
-otree_boto2_shim==0.3.2
-dj_database_url==0.4.1
-channels==0.17.3
-otree_core==1.4.28
+otree-core>=1.4.11
+
+# Heroku requires Django to be explicitly in requirements file
+# in order to run collectstatic
 Django==1.8.8
-boto==2.48.0
+otreechat==0.1.7
+otree-save-the-change==2.0.0
