@@ -4,4 +4,3 @@ channels==0.17.3
 otree_core==1.4.28
 Django==1.8.8
 boto==2.48.0
-otree==0.1
