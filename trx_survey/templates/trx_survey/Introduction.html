@@ -4,25 +4,16 @@
 
 {% block content %}
 
-<p>A few months back, you completed a survey, as part of a transcription task, you were asked.</p>
+<p>A few months back, you completed a survey, as part of a transcription task. Here is one of the questions you were asked:</p>
+<hr>
 
-<p><i>Below you are presented with 5 scenarios. In each you will be given the choice between being paid for completing a page of transcription at 95% accuracy within 48 hours, or receiving $9 without having to do any transcription, also 48 hours from now.</i></p>
+<p><i>You will be given the choice between being paid for completing a page of transcription at 95% accuracy within 48 hours, or receiving $9 without having to do any transcription, also 48 hours from now.</i></p>
 
+<p>As promised, we have randomly selected one of the questions you answered, the selected question is:</p>
+<p><i>Which would you prefer?</i></p>
+<p><i>${{qno5}}, for 5 pages transcribed (${{qno}} per page, 95% accuracy) or $9, no transcription required
 
-<p><i>Which would you prefer?</i></p>
-<p><i>$15, for 5 pages transcribed ($3 per page, 95% accuracy) or $9, no transcription required
-<p><i>Which would you prefer?</i></p>
-<p><i>$20, for 5 pages transcribed ($4 per page, 95% accuracy) or $9, no transcription required
-<p><i>Which would you prefer?</i></p>
-<p><i>$25, for 5 pages transcribed ($5 per page, 95% accuracy) or $9, no transcription required
-<p><i>Which would you prefer?</i></p>
-<p><i>$30, for 5 pages transcribed ($6 per page, 95% accuracy) or $9, no transcription required
-<p><i>Which would you prefer?</i></p>
-<p><i>$35, for 5 pages transcribed ($7 per page, 95% accuracy) or $9, no transcription required</i></p>
-
-<p>Your MTUrk ID is  {{ wid }}</p>
-
-<p>First we'll ask you some questions. Then you will interact with other participants. Please do this first part promptly so other participants do not have to wait for you. But read questions carefully because you will not be able to return to your answers after proceeding to the next page.</p>
+<p>Your MTUrk ID is  {{ wid }} and you chose to{% if niner %} take the $9, and not perform any transcription. {% else %} perform the 5 pages of transcriptions for ${{qno5}}.{% endif %}</p>
 
 <p>The transcription part, for the bonus, can be done any time in the next 48 hours.</p>
     
