@@ -131,9 +131,9 @@ class EmployeeChat(Page):
 
 class Transcribe(Page):
 
-    def is_displayed(self):        
-        if self.player.id_in_group != 1 and self.player.in_round(1).emp_price != 0  and not self.player.outofthegame and self.player.in_round(1).emp_price <= 5.0 :
-            return True
+#    def is_displayed(self):        
+#        if self.player.id_in_group != 1 and self.player.in_round(1).emp_price != 0  and not self.player.outofthegame and self.player.in_round(1).emp_price <= 5.0 :
+#            return True
 
     form_model = models.Player
     form_fields = ['transcribed_text']
@@ -146,7 +146,7 @@ class Transcribe(Page):
         return {
 #            'image_path': 'https://dl.dropboxusercontent.com/u/1688949/trx/{}_{}.png'.format(self.player.id_in_group-1,
 #                self.round_number),
-            'image_path': 'https://dl.dropboxusercontent.com/u/1688949/trx/1_{}.png'.format(self.round_number),
+            'image_path': 'transcription/1_{}.png'.format(self.round_number),
 #            'reference_text': safe_json(Constants.reference_texts[self.player.id_in_group-2,self.round_number - 1]),
             'reference_text': safe_json(Constants.reference_texts[0,self.round_number - 1]),
             'header_text': header_text,

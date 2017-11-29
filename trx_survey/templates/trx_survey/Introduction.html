@@ -10,12 +10,14 @@
 <p><i>You will be given the choice between being paid for completing a page of transcription at 95% accuracy within 48 hours, or receiving $9 without having to do any transcription, also 48 hours from now.</i></p>
 
 <p>As promised, we have randomly selected one of the questions you answered, the selected question is:</p>
-<p><i>Which would you prefer?</i></p>
-<p><i>${{qno5}}, for 5 pages transcribed (${{qno}} per page, 95% accuracy) or $9, no transcription required
+<pre>Which would you prefer: ${{qno5}}, for 5 pages transcribed (${{qno}} per page, 95% accuracy) or $9, no transcription required?</pre>
 
-<p>Your MTUrk ID is  {{ wid }} and you chose to{% if niner %} take the $9, and not perform any transcription. {% else %} perform the 5 pages of transcriptions for ${{qno5}}.{% endif %}</p>
+<p>Your MTurk ID is  {{ wid }} and you chose to{% if niner %} take the $9, and not perform any transcription. {% else %} perform the 5 pages of transcriptions for ${{qno5}}.{% endif %}</p>
 
-<p>The transcription part, for the bonus, can be done any time in the next 48 hours.</p>
-    
+{% if niner %}
+<p>Please click next to complete. Within a few days you should receive the $9 bonus. Thanks!</p>
+{% else %} 
+<p>If you still want to do it, the transcription part, for the bonus, can be done any time in the next 48 hours. Please click next to start.</p>
+{% endif %}    
 {% next_button %}
 {% endblock %}

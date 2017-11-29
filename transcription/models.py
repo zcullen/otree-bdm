@@ -83,7 +83,6 @@ class Constants(BaseConstants):
     reference_texts[0,2] = get_trx("1_3")
     reference_texts[0,3] = get_trx("1_4")
     reference_texts[0,4] = get_trx("1_5")
-
     allowed_error_rates = [3,3,3,3,3]
     startwp_timer = 600
 

@@ -25,6 +25,26 @@ class Constants(BaseConstants):
     name_in_url = 'trx_survey'
     players_per_group = None
     num_rounds = 1
+    mturk_ids = {1:'A3KR3JXXEHZDGV',
+                 2:'A1A02K56ENPSO',
+                 3:'A3RQPPTVFJB6EE',
+                 4:'A2QRYZKNA9XT4T',
+                 5:'APZQ9ADUXTS7N',
+                 6:'A115C4B2OHIESF',
+                 7:'A3VO62XB3T2TLB',
+                 8:'A198SS8SV0LWKB',
+                 9:'A1N474MXOPLSJ2',
+                 10:'A3NSJ6GJC7TZSG',
+                 11:'A3OV174HQJIJK8',
+                 12:'A35F2841BY4XB4',
+                 13:'A36MRQBG3LDR7I',
+                 14:'A3S2E0M3MI59QD',
+                 15:'ACJYC1XM245T1',
+                 16:'AVC1PLLFS210S',
+                 17:'A16G6PPH1INQL8',
+                 18:'A20H1EL2ZO41DP',
+                 19:'A3T1FM3126RW25',
+                 20:'A3JMJIKX36UNC7'}
 
 class Subsession(BaseSubsession):
     pass
